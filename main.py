@@ -1,32 +1,24 @@
 from customtkinter import *
 
+def label_creator(window, text, fgcolor, cornerradius, font, x, y):
+    CTkLabel(
+        window,
+        text= text,
+        fg_color= fgcolor,
+        corner_radius= cornerradius,
+        font= font
+    ).place(
+        x= x,
+        y= y
+    )
+
 window = CTk()
 window.title("Password Manager")
 window.geometry("500x500")
 
-app_label = CTkLabel(
-    window,
-    text= "Password Manager",
-    fg_color= "black",
-    corner_radius= 10,
-    font= ("Arial", 40, "bold")
-)
-app_label.place(
-    x= 55,
-    y= 10
-)
+app_label = label_creator(window, "Password Manager", "black", 10, ("Arial", 40, "bold"), 55, 10)
 
-web_label = CTkLabel(
-    window,
-    text= "Website/App",
-    fg_color= "black",
-    corner_radius= 10,
-    font= ("Arial", 20, "bold")
-)
-web_label.place(
-    x= 20,
-    y= 100
-)
+web_label = label_creator(window, "Website/App Name", "black", 10, ("Arial", 20, "bold"), 20, 100)
 
 web_entry = CTkEntry(
     window,
@@ -39,17 +31,7 @@ web_entry.place(
     y= 100
 )
 
-email_label = CTkLabel(
-    window,
-    text= "Email/Username",
-    fg_color= "black",
-    corner_radius= 10,
-    font= ("Arial", 20, "bold")
-)
-email_label.place(
-    x= 20,
-    y= 150
-)
+email_label = label_creator(window, "Email/Username", "black", 10, ("Arial", 20, "bold"), 20, 150)
 
 email_entry = CTkEntry(
     window,
@@ -62,17 +44,7 @@ email_entry.place(
     y= 150
 )
 
-pass_label = CTkLabel(
-    window,
-    text= "Password",
-    fg_color= "black",
-    corner_radius= 10,
-    font= ("Arial", 20, "bold")
-)
-pass_label.place(
-    x= 20,
-    y= 200
-)
+pass_label = label_creator(window, "Password", "black", 10, ("Arial", 20, "bold"), 20, 200)
 
 pass_entry = CTkEntry(
     window,
