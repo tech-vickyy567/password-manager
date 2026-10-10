@@ -8,5 +8,15 @@
         "Website": "HackerRank",
         "Email": "user2@gmail.com",
         "Password": "123123123"
+    },
+    {
+        "Website": "My JIO",
+        "Email": "jio@gmail.com",
+        "Password": "123123123"
+    },
+    {
+        "Website": "whatsapp",
+        "Email": "_rushikesh",
+        "Password": "12345678"
     }
 ]
